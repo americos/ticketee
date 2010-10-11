@@ -4,10 +4,13 @@ Feature: Deleting Tickets
 	I want to press a button and make them disappear
 	
 	Background:
+		Given there is a user with email address "user@ticketee.com" and password "password"
+		Given "user@ticketee.com" has confirmed their account
+		And I am signed in as them
 		Given there is a project called "TextMate 2"
-		And that project has a ticket:
-			| title							| description					|
-			| Make it shiny!				| Gradients! Statbusts! Oh my!	|
+		And "user@ticketee.com" has created a ticket for this project:
+			| title						| description					|
+			| Make it shiny!			| Gradients! Starbusts! Oh my! 	|
 		Given I am on the homepage
 		When I follow "TextMate 2"
 		And I follow "Make it shiny"

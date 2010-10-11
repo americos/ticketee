@@ -4,12 +4,13 @@ Feature: Viewing Tickets
 	I want to see them on that project's page
 	
 	Background:
+		Given there is a user with email address "user@ticketee.com" and password "password"
 		Given there is a project called "TextMate 2"
-		And that project has a ticket:
+		And "user@ticketee.com" has created a ticket for this project:
 			| title				| description					|
 			| Make it shiny!	| Gradients! Starbusts! Oh my! 	|
 		And there is a project called "Internet Explorer"
-		And that project has a ticket:
+		And "user@ticketee.com" has created a ticket for this project:
 			| title					| description					|
 			| Standards compliance	| Isn't a joke.					|
 		Given I am on the homepage
