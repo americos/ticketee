@@ -1,13 +1,11 @@
-Given /^there is an? (admin|user) with email address "([^\"]*)" and password "([^\"]*)"$/ do |admin, email, password|
+Given /^there is an? (unconfirmed)?\s?(admin|user) with email address "([^\"]*)" and password "([^\"]*)"$/ do |unconfirmed, admin, email, password|
   @user = User.new(:email => email, :password => password, :password_confirmation => password)
-  @user.admin = admin == "admin"
+  @user.admin = true if admin == "admin"
   @user.save!
+  @user.confirm! unless unconfirmed
 end
 
 
-Given /^"([^\"]*)" has confirmed their account$/ do |email|
-  User.find_by_email(email).confirm!
-end
 
 
 Given /^I am signed in as "([^\"]*)"$/ do |email|

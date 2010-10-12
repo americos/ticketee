@@ -5,7 +5,7 @@ Feature: Deleting users
 	
 	Background:
 		Given there is an admin with email address "admin@ticketee.com" and password "password"
-		And "admin@ticketee.com" has confirmed their account
+	
 		And I am signed in as them
 		
 		And there is a user with email address "user@ticketee.com" and password "password"
