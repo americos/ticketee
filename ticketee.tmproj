@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/controllers/tickets_controller.rb</string>
+	<string>app/models/permission.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,49 +21,21 @@
 	<integer>288</integer>
 	<key>metaData</key>
 	<dict>
-		<key>app/controllers/tickets_controller.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>53</integer>
-				<key>line</key>
-				<integer>16</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/models/ticket.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>73</integer>
-				<key>line</key>
-				<integer>4</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/tickets/_form.html.erb</key>
+		<key>app/controllers/projects_controller.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>9</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>66</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>21</integer>
 		</dict>
-		<key>app/views/tickets/edit.html.erb</key>
+		<key>app/models/permission.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -77,28 +49,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/views/tickets/new.html.erb</key>
+		<key>features/editing_projects.feature</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>21</integer>
 				<key>line</key>
-				<integer>1</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>app/views/tickets/show.html.erb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>47</integer>
-				<key>line</key>
-				<integer>1</integer>
+				<integer>12</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -110,41 +68,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>49</integer>
+				<integer>59</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>10</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-			<key>selectFrom</key>
+		</dict>
+		<key>features/step_definitions/permission_steps.rb</key>
+		<dict>
+			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>21</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>2</integer>
 			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>49</integer>
-				<key>line</key>
-				<integer>26</integer>
-			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
+		<string>features/editing_projects.feature</string>
+		<string>app/controllers/projects_controller.rb</string>
 		<string>features/editing_tickets.feature</string>
-		<string>app/views/tickets/show.html.erb</string>
-		<string>app/controllers/tickets_controller.rb</string>
-		<string>app/models/ticket.rb</string>
-		<string>app/views/tickets/edit.html.erb</string>
-		<string>app/views/tickets/_form.html.erb</string>
-		<string>app/views/tickets/new.html.erb</string>
+		<string>features/step_definitions/permission_steps.rb</string>
+		<string>app/models/permission.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
@@ -167,14 +121,30 @@
 							<key>isExpanded</key>
 							<true/>
 							<key>subItems</key>
-							<dict/>
+							<dict>
+								<key>admin</key>
+								<dict>
+									<key>isExpanded</key>
+									<true/>
+									<key>subItems</key>
+									<dict/>
+								</dict>
+							</dict>
 						</dict>
 						<key>helpers</key>
 						<dict>
 							<key>isExpanded</key>
 							<true/>
 							<key>subItems</key>
-							<dict/>
+							<dict>
+								<key>admin</key>
+								<dict>
+									<key>isExpanded</key>
+									<true/>
+									<key>subItems</key>
+									<dict/>
+								</dict>
+							</dict>
 						</dict>
 						<key>models</key>
 						<dict>
@@ -189,6 +159,28 @@
 							<true/>
 							<key>subItems</key>
 							<dict>
+								<key>admin</key>
+								<dict>
+									<key>isExpanded</key>
+									<true/>
+									<key>subItems</key>
+									<dict>
+										<key>base</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>users</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+									</dict>
+								</dict>
 								<key>layouts</key>
 								<dict>
 									<key>isExpanded</key>
@@ -227,6 +219,13 @@
 							<key>subItems</key>
 							<dict/>
 						</dict>
+						<key>locales</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict/>
+						</dict>
 					</dict>
 				</dict>
 				<key>db</key>
@@ -234,7 +233,15 @@
 					<key>isExpanded</key>
 					<true/>
 					<key>subItems</key>
-					<dict/>
+					<dict>
+						<key>migrate</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict/>
+						</dict>
+					</dict>
 				</dict>
 				<key>features</key>
 				<dict>
@@ -271,7 +278,7 @@
 					<true/>
 					<key>subItems</key>
 					<dict>
-						<key>controllers</key>
+						<key>support</key>
 						<dict>
 							<key>isExpanded</key>
 							<true/>
@@ -284,6 +291,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{298, 29}, {1142, 849}}</string>
+	<string>{{1817, -69}, {1425, 888}}</string>
 </dict>
 </plist>

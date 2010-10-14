@@ -1,7 +1,6 @@
 def stub_warden
   @warden = OpenStruct.new
-   #@warden.stub!(:set_user)
-   request.env['warden'] = @warden
+  request.env['warden'] = @warden
 end
 
 def sign_in_as(user)

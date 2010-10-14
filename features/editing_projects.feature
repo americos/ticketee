@@ -4,8 +4,7 @@ Feature: Editing Projects
 	I want to be able to do that through an interface
 	
 	Background:
-		Given there is an admin with email address "admin@ticketee.com" and password "password"
-		
+		Given there is an admin with email address "admin@ticketee.com" and password "password"		
 		And I am signed in as them
 		Given there is a project called "TextMate 2"
 		And I am on the homepage

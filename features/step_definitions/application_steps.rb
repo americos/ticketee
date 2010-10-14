@@ -11,3 +11,4 @@ end
 def css(selector)
   Nokogiri::HTML(body).css(selector)
 end
+
