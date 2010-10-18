@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/models/permission.rb</string>
+	<string>app/views/admin/permissions/index.html.erb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,40 +21,40 @@
 	<integer>288</integer>
 	<key>metaData</key>
 	<dict>
-		<key>app/controllers/projects_controller.rb</key>
+		<key>app/controllers/admin/permissions_controller.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>23</integer>
 				<key>line</key>
-				<integer>66</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>21</integer>
-		</dict>
-		<key>app/models/permission.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>1</integer>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>features/editing_projects.feature</key>
+		<key>app/helpers/admin/permissions_helper.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>21</integer>
+				<integer>5</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/admin/permissions/index.html.erb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>23</integer>
 				<key>line</key>
 				<integer>12</integer>
 			</dict>
@@ -63,28 +63,28 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>features/editing_tickets.feature</key>
+		<key>config/routes.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>59</integer>
+				<integer>111</integer>
 				<key>line</key>
-				<integer>10</integer>
+				<integer>18</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>features/step_definitions/permission_steps.rb</key>
+		<key>features/assigning_permissions.feature</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>3</integer>
+				<integer>1</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -94,11 +94,11 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>features/editing_projects.feature</string>
-		<string>app/controllers/projects_controller.rb</string>
-		<string>features/editing_tickets.feature</string>
-		<string>features/step_definitions/permission_steps.rb</string>
-		<string>app/models/permission.rb</string>
+		<string>features/assigning_permissions.feature</string>
+		<string>config/routes.rb</string>
+		<string>app/controllers/admin/permissions_controller.rb</string>
+		<string>app/views/admin/permissions/index.html.erb</string>
+		<string>app/helpers/admin/permissions_helper.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
@@ -166,6 +166,13 @@
 									<key>subItems</key>
 									<dict>
 										<key>base</key>
+										<dict>
+											<key>isExpanded</key>
+											<true/>
+											<key>subItems</key>
+											<dict/>
+										</dict>
+										<key>permissions</key>
 										<dict>
 											<key>isExpanded</key>
 											<true/>
@@ -278,6 +285,13 @@
 					<true/>
 					<key>subItems</key>
 					<dict>
+						<key>controllers</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict/>
+						</dict>
 						<key>support</key>
 						<dict>
 							<key>isExpanded</key>
@@ -291,6 +305,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{1817, -69}, {1425, 888}}</string>
+	<string>{{298, 29}, {1142, 849}}</string>
 </dict>
 </plist>
